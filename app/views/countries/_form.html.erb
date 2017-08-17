@@ -1,0 +1,62 @@
+<%= form_for(country) do |f| %>
+  <% if country.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(country.errors.count, "error") %> prohibited this country from being saved:</h2>
+
+      <ul>
+      <% country.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :id %>
+    <%= f.number_field :id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :age %>
+    <%= f.number_field :age %>
+  </div>
+
+  <div class="field">
+    <%= f.label :description %>
+    <%= f.text_area :description,  class: "recallable", id: "asdf" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :description %>
+    <%= f.text_area :description,  class: "recallable", id: "asdf2" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :name_of_top %>
+    <%= f.text_field :name_of_top %>
+  </div>
+
+  <div class="field">
+    <%= f.label :country_number %>
+    <%= f.number_field :country_number %>
+  </div>
+
+  <div class="field">
+    <%= f.label :language %>
+    <%= f.text_field :language %>
+  </div>
+
+  <div class="field">
+    <%= f.label :name_of_capital %>
+    <%= f.text_field :name_of_capital %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id: 1
+  name: MyString
+  age: 1
+  description: MyText
+  name_of_top: MyString
+  country_number: 1
+  language: MyString
+  name_of_capital: MyString
+
+two:
+  id: 1
+  name: MyString
+  age: 1
+  description: MyText
+  name_of_top: MyString
+  country_number: 1
+  language: MyString
+  name_of_capital: MyString
