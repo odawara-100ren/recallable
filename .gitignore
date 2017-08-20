@@ -17,5 +17,8 @@
 !/log/.keep
 !/tmp/.keep
 
+# Ignore bundled gems
+/vendor/bundle
+
 # Ignore Byebug command history file.
 .byebug_history
